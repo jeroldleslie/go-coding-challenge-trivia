@@ -1,0 +1,37 @@
+version: "3"
+services:
+  api_trivia:
+    build:
+      context: .
+      args:
+        - APP_NAME=api_trivia
+      dockerfile: config/Dockerfile
+    image: api_trivia
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
+    environment:
+      - APP_DB_CONNECTION_STR=${APP_DB_CONNECTION_STR}
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    ports:
+      - 3306:3306
+    expose:
+      - 3306
+    volumes:
+      - "./scripts/schema.sql:/docker-entrypoint-initdb.d/1.sql"
+      - "./scripts/sample_data.sql:/docker-entrypoint-initdb.d/2.sql"
+
+
+
+
+
