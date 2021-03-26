@@ -1,29 +1,29 @@
-#Go coding challenge
+# Go coding challenge
 
-###Technologies used:
+### Technologies used:
 - GoLang
 - MySQL
 
-###What are all done?
+### What are all done?
 - Developed based on dockerized microservice architecture
 - few unit tests covered
 - dockerized the whole project so that it can be easily shipped to any cloud instances
 - prodution ready code(70%)
 
-###Endpoint Document
+### Endpoint Document
 https://docs.google.com/document/d/14Q2KV9nLY-vCVCfLz6g_xj5tizOZeMOkwGG__LYnQng/edit?usp=sharing
 TODO: Swagger API document need to be added
 
-##How to run and check?
-###Prerequisites
+## How to run and check?
+### Prerequisites
 - install docker https://docs.docker.com/engine/install/
 - install MySQL
 
-###Set Environment variables
+### Set Environment variables
 - APP_DB_CONNECTION_STR (ex: APP_DB_CONNECTION_STR="root:trivia@tcp(localhost:3306)/triviadb")
 - MYSQL_ROOT_PASSWORD (this is only if running DB in docker container)
 
-###How to run and check using docker?
+### How to run and check using docker?
 - open the terminal or command prompt
 - `git clone https://github.com/jeroldleslie/go-coding-challenge-trivia`
 - `cd <to the checkedout project folder>`
@@ -43,7 +43,7 @@ TODO: Swagger API document need to be added
 ```
 - test using any http client (ex: postman client)
 
-###How to run and check locally?
+### How to run and check locally?
 run the below commands in terminal
 - `git clone https://github.com/jeroldleslie/go-coding-challenge-trivia`
 - run the SQL scripts to initiate DB schema and sample data. Run the below scripts in order
@@ -64,6 +64,6 @@ run the below commands in terminal
   O\
   ⇨ http server started on [::]:8000
 ```
-NOTE: 
+###NOTE: 
 1. The above instructions were very high level. Hope you can understand. Let me know if you have any doubts on running the services.
 2. Almost covered tha main things that showcasing essential things. Due to time restriction I cannot covered a lot of functionalities.
