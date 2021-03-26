@@ -25,7 +25,7 @@ func (dbMapper *DBMapper) fetchDetails(ctx context.Context, number string, text 
 		conditions = append(conditions, fmt.Sprintf("text like '%s'", "%"+text+"%"))
 	}
 
-	finalCond := strings.Join(conditions, "and")
+	finalCond := strings.Join(conditions, " and ")
 	query := "select * from numbers"
 
 	if finalCond != "" {
