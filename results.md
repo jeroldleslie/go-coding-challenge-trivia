@@ -64,6 +64,6 @@ run the below commands in terminal
   O\
   ⇨ http server started on [::]:8000
 ```
-###NOTE: 
+### NOTE: 
 1. The above instructions were very high level. Hope you can understand. Let me know if you have any doubts on running the services.
 2. Almost covered tha main things that showcasing essential things. Due to time restriction I cannot covered a lot of functionalities.
