@@ -46,6 +46,9 @@ TODO: Swagger API document need to be added
 ###How to run and check locally?
 run the below commands in terminal
 - `git clone https://github.com/jeroldleslie/go-coding-challenge-trivia`
+- run the SQL scripts to initiate DB schema and sample data. Run the below scripts in order
+  1. <project folder>/scripts/schema.sql
+  1. <project folder>/scripts/sample_data.sql
 - `cd <to the checkedout project folder>/cmd/api_trivia/`
 - `go build`
 - `./api_trivia`
